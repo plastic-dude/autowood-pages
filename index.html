@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AutoWood Voice and Radar Check</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&display=swap"
+    />
+    <link rel="stylesheet" href="hark.css" />
+    <link rel="stylesheet" href="hark-hero.css" />
+    <style>
+      .x-audio { display: block; width: 100%; min-height: var(--tap); margin: 12px 0; }
+      .x-tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
+    </style>
+  </head>
+  <body>
+    <div class="page" id="top">
+      <header class="nav glass" data-auto></header>
+      <main class="main">
+        <section class="hero">
+          <div class="hero__copy">
+            <p class="hero__eyebrow">AutoWood · for David</p>
+            <h1>Voice test and trend radar</h1>
+            <p class="hero__sub">Two emotional Chatterbox takes to hear, whether they are worth the speed cost, and today's first trend radar.</p>
+            <p class="hero__meta">10 Nov 2026 · 2-core ARM CPU, no GPU</p>
+          </div>
+          <aside class="callout" aria-label="Decision needed">
+            <p class="callout__head"><span class="hark-mark" data-size="16"></span> Decision needed</p>
+            <p class="callout__lead"><strong>Listen, then pick a voice plan.</strong> Kokoro for most lines with Chatterbox for 2–3 beats costs about 3 minutes extra per episode.</p>
+            <div class="links">
+              <span class="btn">Reply in Hark: "Chatterbox for emotional beats"</span>
+              <span class="btn">or "Kokoro only"</span>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section" id="voice" data-nav="Voice">
+          <div class="head">
+            <p class="head__eyebrow">1 · Voice test</p>
+            <h2>Chatterbox sounds more alive, at 20–25x slower than realtime.</h2>
+            <p class="head__sub">Test line: “In this town, nobody is allowed to say goodbye.”</p>
+          </div>
+          <div class="cards">
+            <div>
+              <h3>Chatterbox, mild <small>exaggeration 0.5</small></h3>
+              <audio class="x-audio" controls preload="metadata" src="chatterbox_mild.mp3">Your browser cannot play this audio.</audio>
+              <p><span class="pill">71.1 s to make</span> <span class="pill">2.88 s speech</span></p>
+              <p>About 25x slower than realtime.</p>
+            </div>
+            <div>
+              <h3>Chatterbox, intense <small>exaggeration 0.9</small></h3>
+              <audio class="x-audio" controls preload="metadata" src="chatterbox_intense.mp3">Your browser cannot play this audio.</audio>
+              <p><span class="pill">41.3 s to make</span> <span class="pill">2.12 s speech</span></p>
+              <p>About 20x slower than realtime. May sound rushed.</p>
+            </div>
+            <div>
+              <h3>Kokoro <small>current default</small></h3>
+              <p class="quote">Faster than realtime, flatter emotion.</p>
+              <p><span class="pill">~23 s per 50 s audio</span></p>
+            </div>
+            <div>
+              <h3>KittenTTS 2</h3>
+              <p class="quote">No audio after 14 minutes on this machine.</p>
+              <p><span class="pill">115 voices</span> <span class="chip">Ruled out here</span></p>
+            </div>
+          </div>
+          <div class="pair">
+            <aside class="callout" aria-label="Recommendation">
+              <p class="callout__head">Recommendation</p>
+              <p class="callout__lead"><strong>Kokoro for most lines, Chatterbox for 2–3 emotional beats per short.</strong> About 3 minutes extra per episode.</p>
+            </aside>
+            <div class="aside">
+              <h3>Licences</h3>
+              <p class="fineprint">Chatterbox code is MIT; the project retired Aug 2026, and outputs carry an inaudible watermark.</p>
+              <p class="fineprint">KittenTTS 2 is free under $1M revenue, but needs registration with Stellon Labs and a “Powered by KittenML” credit.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="radar" data-nav="Radar">
+          <div class="head">
+            <p class="head__eyebrow">2 · Trend Radar v0, first run</p>
+            <h2>227 topics scored on the first run.</h2>
+            <p class="head__sub">10 Nov 2026, 05:45 UTC.</p>
+          </div>
+          <section class="stats">
+            <div class="stat"><span class="stat__fig">227</span><span class="stat__label">Topics scored</span></div>
+            <div class="stat"><span class="stat__fig">43</span><span class="stat__label">Blocked: politics, tragedy, real people</span></div>
+            <div class="stat"><span class="stat__fig">5</span><span class="stat__label">Sources live</span></div>
+          </section>
+          <div class="cards">
+            <div>
+              <h3>Live</h3>
+              <ul>
+                <li>Wikipedia</li>
+                <li>Google Trends</li>
+                <li>YouTube autocomplete</li>
+                <li>Hacker News</li>
+                <li>Bluesky</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Blocked</h3>
+              <ul>
+                <li>Reddit <small>needs login</small></li>
+                <li>TikTok Creative Center <small>no permission</small></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Waiting on a key</h3>
+              <ul><li>YouTube Data API</li></ul>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <caption>Top 10 topics</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Topic</th>
+                  <th scope="col">Score</th>
+                  <th scope="col">Rising early?</th>
+                  <th scope="col">Note</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="is-highlight"><th scope="row">I, Robot (film)</th><td class="num">0.397</td><td>Yes</td><td class="muted">Wikipedia views +43%</td></tr>
+                <tr><th scope="row">Fable 5.2 dream-game story <small>Hacker News</small></th><td class="num">0.350</td><td>No</td><td class="muted">Thin history</td></tr>
+                <tr><th scope="row">Scene (2026 film)</th><td class="num">0.285</td><td>Yes</td><td class="muted"></td></tr>
+                <tr><th scope="row">Booker Prize winner</th><td class="num">0.248</td><td>Yes</td><td class="muted"></td></tr>
+                <tr><th scope="row">VisionQuest</th><td class="num">0.247</td><td>No</td><td class="muted">Marvel trademark: use our own world</td></tr>
+                <tr><th scope="row">Highest-grossing Indian films</th><td class="num">0.221</td><td>Yes</td><td class="muted">List page</td></tr>
+                <tr><th scope="row">Godzilla Minus Zero</th><td class="num">0.202</td><td>No</td><td class="muted">Only topic on 2 platforms</td></tr>
+                <tr><th scope="row">“Who’s really running your Bluesky” meme</th><td class="num">0.192</td><td>No</td><td class="muted"></td></tr>
+                <tr><th scope="row">Ocarina of Time remake</th><td class="num">0.185</td><td>No</td><td class="muted">Nintendo trademark: use our own world</td></tr>
+                <tr><th scope="row">.xyz</th><td class="num">0.183</td><td>No</td><td class="muted"></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section" id="evergreen" data-nav="Evergreen">
+          <div class="head">
+            <p class="head__eyebrow">3 · Evergreen searches</p>
+            <h2>Six steady searches that fit our story shorts.</h2>
+            <p class="head__sub">From YouTube autocomplete, with low supply.</p>
+          </div>
+          <ul class="x-tags">
+            <li class="pill">game world story</li>
+            <li class="pill">mystery story shorts</li>
+            <li class="pill">secret rule game</li>
+            <li class="pill">pov storytime animation</li>
+            <li class="pill">what if story explained</li>
+            <li class="pill">npc ai story</li>
+          </ul>
+        </section>
+
+        <section class="section" id="angles" data-nav="Angles">
+          <div class="head">
+            <p class="head__eyebrow">4 · Sample story angles</p>
+            <h2>Four templated angles for the Writer agent to rewrite.</h2>
+          </div>
+          <div class="cards">
+            <div><p>An NPC in a brand-new game world realises the players stopped coming, and decides to make the world worth visiting again.</p></div>
+            <div><p>In a brand-new game world, the final boss is tired of losing and asks one player for advice.</p></div>
+            <div><p>Two rivals are forced to team up when the map starts deleting itself one tile at a time.</p></div>
+            <div><p>The night the robot arrives in our town, every streetlight blinks the same pattern. One kid writes it down.</p></div>
+          </div>
+        </section>
+
+        <section class="section" id="next" data-nav="Next">
+          <div class="head">
+            <p class="head__eyebrow">5 · Honest limits and what's next</p>
+            <h2>The radar is a first draft; four fixes come next.</h2>
+          </div>
+          <div class="pair">
+            <div class="cards">
+              <div>
+                <h3>Limits</h3>
+                <ul>
+                  <li>Speed scores need about a week of 6-hourly history.</li>
+                  <li>Trademark detection is heuristic.</li>
+                  <li>Angles are templates.</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="checklist">
+              <li><span class="checklist__item">Free YouTube API key</span><span class="chip chip--solid">Google sign-in pending</span></li>
+              <li><span class="checklist__item">Schedule runs every 6 hours</span></li>
+              <li><span class="checklist__item">Official Reddit API</span></li>
+              <li><span class="checklist__item">Story Editor novelty check</span></li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="foot">
+        <p>AutoWood internal check, 10 Nov 2026. Timings from a 2-core ARM CPU, no GPU.</p>
+        <nav aria-label="Back to sections" data-auto></nav>
+        <a class="badge" href="https://hark.com/" target="_blank" rel="noopener"><span class="hark-mark"></span><span>built by hark</span></a>
+      </footer>
+    </div>
+    <script src="hark.js"></script>
+  </body>
+</html>
